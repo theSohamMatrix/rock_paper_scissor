@@ -18,3 +18,13 @@ print('''Choose from this options:
       3- Scissor : S
       '''
 )
+# Taking Inputs from user & sorting
+computer = random.choice([1,0,-1])
+c = computer
+
+user = input("Enter Your Choice: ").upper
+you = user
+
+choice_l_for_c = {1 : "Rock",0 : "Paper",-1 : "Scissor"} 
+choice_l_for_u = {"R": 1, "P": 0, "S" : -1 }
+
