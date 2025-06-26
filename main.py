@@ -22,12 +22,39 @@ print('''Choose from this options:
 computer = random.choice([1,0,-1])
 c = computer
 
-user = input("Enter Your Choice: ").upper
-you = user
+user = input("Enter Your Choice: ").upper()
+
 
 choice_l_for_c = {1 : "Rock",0 : "Paper",-1 : "Scissor"} 
-choice_l_for_u = {"R": 1, "P": 0, "S" : -1 }
+choice_l_for_u = {"R": "Rock", "P": "Paper", "S" : "Scissor"}
 
 # Display what is choosed by user and computer: 
-print(f"Computer choosed : {choice_l_for_c[c]}\nYou choosed: {choice_l_for_u[you]}")
+print("")
+print(f"Computer choosed : {choice_l_for_c[c]}".center(50))
+print(f"You choosed: {choice_l_for_u[user]}".center(50))
+print("="*50 )
 
+# game system: 
+if(c== 1 and user == "R"):  # for a draw
+    print("Its A Draw!!".center(50))
+elif(c== 0 and user == "P"): 
+    print("Its A Draw!!".center(50))
+elif(c== -1 and user == "S"): 
+    print("Its A Draw!!".center(50))
+elif(c== 1 and user == "P"): # for rock(c)
+    print("You Win!!")
+elif(c== 1 and user =="S"):
+    print("You Loosed!!".center(50))
+elif(c==0 and user == "R"): # for paper(c)
+    print("You Loosed!!".center(50))
+elif(c==0 and user == "S"):
+    print("You Win!!".center(50))
+elif(c==-1 and user == "R"): # for scissor(c)
+    print("You Win!!".center(50))
+elif(c==-1 and user == "P"):
+    print("You Loosed!!".center(50))
+else: 
+    print("Something Went Wrong")
+print("="*50 )
+    
+print("Thank you for playing".center(50))
