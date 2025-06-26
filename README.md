@@ -1,96 +1,65 @@
-🪨 Rock, Paper & Scissors Game – Python CLI
-A fun and simple terminal-based Rock, Paper & Scissors game written in Python. Built with input validation, continuous play loop, and clean user experience — perfect for beginner Python learners and terminal gaming fans!
+# 🪨 Rock, Paper & Scissors Game – Python CLI
 
-📜 Features
-🎮 Classic Rock, Paper & Scissors gameplay
+A fun and interactive command-line Rock, Paper & Scissors game built with Python.  
+Includes input validation, replay loop, and a polished terminal experience.  
+Perfect for beginner coders and portfolio projects!
 
-🔁 Replay loop – play as many rounds as you want
+---
 
-✅ Input validation for clean user experience
+## 🎯 Features
 
-🤖 Computer randomly selects move each round
+- 🎮 Classic Rock, Paper & Scissors gameplay  
+- 🔁 Replay mode — play unlimited rounds  
+- ✅ Smart input validation  
+- 🤖 Random computer moves  
+- 🧠 Clean, beginner-friendly Python code  
 
-🧠 Beginner-friendly, readable code structure
+---
 
-🧑‍💻 How to Play
-Run the game in your terminal:
+## 🧑‍💻 How to Play
 
-bash
-Copy
-Edit
-python main.py
-Choose your move by typing:
+1. Run the game in your terminal:
+   ```bash
+   python main.py
 
-R for Rock
+ 2. Choose your move:
 
-P for Paper
+R → Rock
+P → Paper
+S → Scissors
 
-S for Scissors
+ 3.  After each round, you'll see the result.
+Type Y to play again or N to exit.
 
-See what the computer chose, and whether you won, lost, or drew.
+  🧠 Game Logic
+| You vs Computer     | Result |
+| ------------------- | ------ |
+| Same choice         | Draw   |
+| Rock beats Scissor  | Win    |
+| Paper beats Rock    | Win    |
+| Scissor beats Paper | Win    |
+| Otherwise           | Lose   |
 
-After each round, decide whether to play again by typing:
+🛠 Tech Stack
+ -Language: Python 3
+ -Modules Used: random, input (built-in only)
+ -Platform: CLI (Terminal or VS Code)
 
-Y to continue
+ 4. 📁 Project Structure
+rock-paper-scissors/
+├── main.py      # Game source code
+└── README.md    # Project documentation
 
-N to exit
-
-🛠️ Tech Stack
-Language: Python 3
-
-No external libraries required – uses only built-in Python modules (random, input, print)
-
-🧾 Game Logic Summary
-Player vs Computer	Result
-Same choice	Draw
-Rock beats Scissor	Player Win
-Paper beats Rock	Player Win
-Scissor beats Paper	Player Win
-Otherwise	Player Lose
-
-📁 File Structure
-bash
-Copy
-Edit
-project-folder/
-│
-├── main.py        # Main game file with loop & logic
-└── README.md      # Game instructions and documentation
-🚀 How to Run (VS Code or Terminal)
-Open terminal or VS Code
-
-Navigate to your project folder
-
-Run:
-
-bash
-Copy
-Edit
-python main.py
-🧠 Why This Project?
-This mini project is a great starting point to learn:
-
-Python basics (input, if-else, loops)
-
-Clean CLI interaction
-
-Code structure and logic building
-
-It’s also perfect for a GitHub portfolio to showcase your fundamentals in Python.
-
-🔮 Future Enhancements (Optional Ideas)
-Add a score tracker (Wins/Losses/Draws)
-
-Create a GUI version using Tkinter or PyQt
-
-Store game history in a file
-
-Play against another player
-
-🙌 Author
+🚀 Run Instructions
+ 1. Clone/download the repository
+ 2. Open in VS Code or any terminal
+ 3. Run this command:python main.py
+                     
+   👤 Author
 Soham Kadam
 Student | BSc Computer Science | Creative Thinker
-
+Made with ❤️ and Python 
+                 
 Thanks for checking it out! 🙌
 Feel free to ⭐ star this repo or give feedback!
 
