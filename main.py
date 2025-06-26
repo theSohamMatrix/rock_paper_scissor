@@ -28,3 +28,6 @@ you = user
 choice_l_for_c = {1 : "Rock",0 : "Paper",-1 : "Scissor"} 
 choice_l_for_u = {"R": 1, "P": 0, "S" : -1 }
 
+# Display what is choosed by user and computer: 
+print(f"Computer choosed : {choice_l_for_c[c]}\nYou choosed: {choice_l_for_u[you]}")
+
